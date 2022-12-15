@@ -1,5 +1,9 @@
 import { Entity } from "./common";
 
-export interface User extends Entity{
-    /* complete User interface with some chosen properties */
+export interface User extends Entity {
+  email: string;
+  password: string;
+  name: string;
+  role: "customer" | "admin";
+  avatar: string;
 }
